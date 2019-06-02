@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>registrar personal</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+  <body>
+    <h1>Registrar persona</h1>
+        {% block body %}
+            <form method="POST">
+                              
+                <div id='root'>{% csrf_token %}</div>
+                <button type="submit">Registrarrr</button>
+                <script src ="{% static 'dist/app.bundle.js' %}"></script>  
+                
+            </form>
+        {% endblock body %}
+  </body>
+</html>
